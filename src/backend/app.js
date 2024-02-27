@@ -3,14 +3,15 @@ const app = express();
 const router = express.Router();
 const path = require("path");
 
-app.get("/", async (req, res) => {
-  return app.json({ message: "hello" });
-});
 const mealsRouter = require("./api/meals");
 const buildPath = path.join(__dirname, "../../dist");
 const port = process.env.PORT || 3000;
 const cors = require("cors");
 const knex = require("./database");
+
+app.get("/", async (req, res) => {
+  return app.json({ message: "hello" });
+});
 
 // For week4 no need to look into this!
 // Serve the built client html
@@ -92,12 +93,12 @@ app.get("/last_meal", async (req, res) => {
     }
   } catch (error) {
     console.error(error);
+    if (error.code === "ER_NO_DB_ERROR" || error.code === "ECONNREFUSED") {
+      res.status(503).json({ data: null, message: "Database connection error" });
+    }
     res.status(500).json({ data: null, message: "Server Error" });
   }
 });
-
-
-
 
 if (process.env.API_PATH) {
   app.use(process.env.API_PATH, router);
