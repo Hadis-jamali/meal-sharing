@@ -22,7 +22,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(cors());
-//app.use("/api", router);
 
 app.use("/api/meals", mealsRouter);
 app.use("/api/reservations", reservationsRouter);
@@ -33,9 +32,8 @@ app.use("/api/reservations", reservationsRouter);
 // if (process.env.API_PATH) {
 //   app.use(process.env.API_PATH, router);
 // } else {
-//   throw "API_PATH is not set. Remember to set it in your .env file";
+//   throw "API_PATH is not set. ;
 // }
-// for the frontend. Will first be covered in the react class
 app.use("*", (req, res) => {
   res.sendFile(path.join(`${buildPath}/index.html`));
 });
