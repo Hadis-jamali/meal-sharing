@@ -1,9 +1,13 @@
 const express = require("express");
+// require("dotenv").config();
+const path = require("path");
+require("dotenv").config({ path: path.resolve(__dirname, ".env") });
+
 const app = express();
 const router = express.Router();
-const path = require("path");
 
 const mealsRouter = require("./api/meals");
+const reservationsRouter = require("./api/reservations");
 const buildPath = path.join(__dirname, "../../dist");
 const port = process.env.PORT || 3000;
 const cors = require("cors");
@@ -19,17 +23,28 @@ app.use(express.json());
 
 app.use(cors());
 
-router.use("/meals", mealsRouter);
+app.use("/api/meals", mealsRouter);
+app.use("/api/reservations", reservationsRouter);
 
-if (process.env.API_PATH) {
-  app.use(process.env.API_PATH, router);
-} else {
-  throw "API_PATH is not set. Remember to set it in your .env file"
-}
+//router.use("/meals", mealsRouter);
+//router.use("/reservations", reservationsRouter);
 
-// for the frontend. Will first be covered in the react class
+// if (process.env.API_PATH) {
+//   app.use(process.env.API_PATH, router);
+// } else {
+//   throw "API_PATH is not set. ;
+// }
 app.use("*", (req, res) => {
   res.sendFile(path.join(`${buildPath}/index.html`));
+});
+app.listen(port, () => {
+  console.log(`server is running on port ${port}`);
+});
+
+// General error handler
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send("Something went wrong!");
 });
 
 module.exports = app;
