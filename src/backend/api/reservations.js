@@ -14,12 +14,12 @@ router.get("/", async (req, res) => {
 });
 
 //post add new reservation
-router.post("/:id", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const newReservation = req.body;
     const reservation = await knex("reservation").insert(newReservation);
     if (reservation) {
-      res.status(201).json({ Message: "ok" });
+      res.status(201).json({ data: reservation, Message: "ok" });
     }
   } catch (error) {
     res.status(500).json({ error: "Not Found" });
@@ -29,7 +29,7 @@ router.post("/:id", async (req, res) => {
 //get by id
 router.get("/:id", async (req, res) => {
   try {
-    const id = req.params.id;
+    const { id } = req.params;
     const reservation = await knex.select("*").from("reservation").where("id", id).first();
     if (reservation) {
       res.json(reservation);
@@ -48,8 +48,7 @@ router.put("/:id", async (req, res) => {
     const updateReservation = req.body;
     const update = await knex("reservation").where("id", id).update(updateReservation);
     if (update) {
-      res.json(update);
-      res.status(201).json({ message: "update successfully" });
+      res.status(201).json({ data: update, message: "update successfully" });
     } else {
       res.status(404).json({ message: "Not Found" });
     }

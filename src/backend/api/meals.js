@@ -14,7 +14,7 @@ router.get("/", async (request, response) => {
 //all meal
 router.get("/", async (req, res) => {
   try {
-    const meals = await knex.select("*").from("meals");
+    const meals = await knex("meals").select("*");
     res.json(meals);
   } catch (error) {
     res.status(500).json({ error: "Server Error" });
@@ -26,7 +26,9 @@ router.post("/", async (req, res) => {
   try {
     const newMeal = req.body;
     await knex("meals").insert(newMeal);
-    res.status(201).json({ message: "Meal added successfully" });
+    if (result) {
+      res.status(201).json({ message: "Meal added successfully" });
+    }
   } catch (error) {
     res.status(500).json({ error: "Server Error" });
   }
@@ -36,7 +38,7 @@ router.post("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const id = req.params.id;
-    const getMeal = await knex.select("*").from("meals").where("id", id).first();
+    const getMeal = await knex("meals").select("*").where("id", id).first();
     if (getMeal) {
       res.json(getMeal);
     } else {
