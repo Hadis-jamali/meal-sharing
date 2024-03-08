@@ -5,6 +5,7 @@ const path = require("path");
 require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 
 const mealsRouter = require("./api/meals");
+const reviewsRouter = require("./api/review");
 const buildPath = path.join(__dirname, "../../dist");
 const port = process.env.PORT || 3000;
 const cors = require("cors");
@@ -21,6 +22,7 @@ app.use(express.json());
 app.use(cors());
 
 router.use("/meals", mealsRouter);
+router.use("/review", reviewsRouter);
 
 if (process.env.API_PATH) {
   app.use(process.env.API_PATH, router);
