@@ -19,7 +19,7 @@ router.get("/:id", async (req, res) => {
     const { id: reviewId } = req.params;
     const reviewOfMeal = await knex("review").where("id", "=", reviewId).select();
     if (reviewOfMeal) {
-      res.status(400).json({ data: reviewOfMeal, message: "not found" });
+      res.status(200).json({ data: reviewOfMeal, message: "ok" });
     }
   } catch (error) {
     console.error(error);
@@ -62,7 +62,9 @@ router.delete("/:id", async (req, res) => {
     const deleteReview = await knex("review").where("id", "=", reviewId).del();
 
     if (deleteReview) {
-      res.status(200).json({ data: updateReviewById, message: "ok" });
+      res.status(200).json({ data: deleteReview, message: "ok" }); 
+    }else{
+      res.status(404).json({ data: deleteReview, message: "review id was not found" });
     }
   } catch (error) {
     console.error(error);

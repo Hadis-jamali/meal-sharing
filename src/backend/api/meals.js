@@ -6,7 +6,7 @@ router.get("/", async (req, res) => {
   const { maxPrice, availableReservations, title, dateAfter, sortKey, sortDir, dateBefore, limit } =
     req.query;
   const response = {
-    data: [],
+    data: await knex("meals").select("*") ,
     status: 200,
     message: "ok",
   };
