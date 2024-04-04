@@ -1,9 +1,8 @@
-import React from 'react'
-
+import MealsList from './components/MealsList'
 function App() {
   return (
     <div>
-      
+      <MealsList/>
     </div>
   )
 }
