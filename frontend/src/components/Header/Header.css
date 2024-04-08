@@ -1,0 +1,34 @@
+.container-navbar {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: black;
+}
+.navbar-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+.navbarLink {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+.logo {
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.nav-hover :hover {
+  color: rgb(140, 189, 140);
+}

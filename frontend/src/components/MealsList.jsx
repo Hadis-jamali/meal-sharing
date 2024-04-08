@@ -26,15 +26,12 @@ function MealsList() {
 
   return (
     <>
-      <h1 className="title">Meals Sharing</h1>
-
+      
       <div className="meal-list">
         {loading ? (
           <p>Loading...</p>
         ) : meals.data.length > 0 ? (
-          meals.data.map((meal) => (
-            <MealItem key={meal.meal_id} meal={meal} />
-          ))
+          meals.data.map((meal) => <MealItem key={meal.meal_id} meal={meal} />)
         ) : (
           <p>No Item</p>
         )}

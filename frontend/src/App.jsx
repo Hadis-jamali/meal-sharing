@@ -1,11 +1,14 @@
-import MealsList from './components/MealsList'
+import Header from "./components/Header/Header";
+import MealsList from "./components/MealsList";
+import Footer from "./components/footer/Footer";
 function App() {
   return (
     <div>
-      <MealsList/>
+      <Header />
+      <MealsList />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
-
+export default App;
