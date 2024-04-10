@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 function Header() {
   return (
-    <div>
+    <div class="container">
       <div className="container-navbar">
         <div className="navbar-div">
           <a href="#section1" className="logo">
@@ -16,7 +16,7 @@ function Header() {
                 </a>
               </li>
               <li className="nav-hover">
-                <a className="navbarLink"> About </a>
+                <a className="navbarLink"> Menu </a>
               </li>
               <li className="nav-hover">
                 <a className="navbarLink"> Foods </a>
@@ -28,6 +28,10 @@ function Header() {
           </nav>
         </div>
       </div>
+      <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <h1 class="head-title">Order your </h1>
+          <h1 class="head-desc">favorite food here</h1>
+        </div>
     </div>
   );
 }

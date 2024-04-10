@@ -1,8 +1,9 @@
 .footer {
-    margin-top: 3rem;
-    text-align: center;
-    color: #fff;
-    padding: 25px 0;
-    background: black;
-    font-family: sans-serif;
-  }
+  margin-top: 3rem;
+  text-align: center;
+  color: #e17c08;
+  padding: 25px 0;
+  background: rgb(204, 202, 201);
+  font-family: sans-serif;
+  border-radius: 1rem;
+}
