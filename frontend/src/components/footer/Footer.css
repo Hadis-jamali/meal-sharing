@@ -1,9 +1,13 @@
 .footer {
   margin-top: 3rem;
   text-align: center;
-  color: #e17c08;
+  color: #000;
   padding: 25px 0;
-  background: rgb(204, 202, 201);
+  background: rgb(234, 164, 129);
   font-family: sans-serif;
-  border-radius: 1rem;
+  border-radius: 10px;
+  font-family: Nunito;
+}
+.footer p {
+  font-weight: bold;
 }

@@ -4,7 +4,9 @@ function Footer() {
   return (
     <div className="footer">
       <div>
-        <p>Developed with ❤️ by Hadis</p>
+        <p>Meal Resturant</p>
+        <p>Address : Eya Jensens gade 54, 8240 Risskov</p>
+        <p>Tlf : 50 70 90 75</p>
       </div>
     </div>
   );

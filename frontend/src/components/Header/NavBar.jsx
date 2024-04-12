@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <div className="container-navbar">
       <div className="navbar-div">
-        <a href="#section1" className="logo">
+        <a className="logo">
           MealSharing
         </a>
         <nav>
