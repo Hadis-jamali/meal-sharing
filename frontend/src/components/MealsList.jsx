@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import MealItem from "./MealItem";
+import Reservation from "./reservation/Reservation";
 
 function MealsList() {
-  const [meals, setMeals] = useState();
+  const [meals, setMeals] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -26,7 +27,6 @@ function MealsList() {
 
   return (
     <>
-      
       <div className="meal-list">
         {loading ? (
           <p>Loading...</p>
@@ -38,6 +38,7 @@ function MealsList() {
       </div>
     </>
   );
+  
 }
 
 export default MealsList;

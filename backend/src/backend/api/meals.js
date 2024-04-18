@@ -6,7 +6,7 @@ router.get("/", async (req, res) => {
   const { maxPrice, availableReservations, title, dateAfter, sortKey, sortDir, dateBefore, limit } =
     req.query;
   const response = {
-    data: await knex("meals").select("*") ,
+    data: await knex("meals").select("*"),
     status: 200,
     message: "ok",
   };
@@ -77,6 +77,19 @@ router.get("/", async (req, res) => {
   } catch (error) {
     console.error("Server Error", error);
     res.status(500).json({ error: "internal server error" });
+  }
+});
+
+router.get("/:id", async (req, res) => {
+  try {
+    const { id: mealId } = req.params;
+    const meal = await knex("meals").where("id", "=", mealId).select();
+    if (meal) {
+      res.status(200).json({ data: meal, message: "ok" });
+    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("something went wrong");
   }
 });
 

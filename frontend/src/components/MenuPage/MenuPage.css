@@ -1,0 +1,39 @@
+.header-menu {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../assets/images//menu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+.menu-container {
+  margin: auto;
+  flex-direction: column;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 10px;
+  color: rgb(18, 18, 18);
+  background-color: rgb(171, 211, 135);
+  margin: -19rem auto 60px;
+}
+.menu-container h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: rgb(14, 13, 13);
+}
+.menu-container div {
+  margin: 1rem;
+}
+.menu-container h3 {
+  display: flex;
+  justify-content: center;
+  color: #4d9308;
+}
+.menu-container p {
+  display: flex;
+  justify-content: center;
+}
