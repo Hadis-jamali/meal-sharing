@@ -26,19 +26,18 @@ body {
   margin: 1rem;
 }
 .meal-item button {
-  background: rgb(195, 192, 192);
+  background: #fff;
   color: #000;
   text-decoration: none;
-  border: 2px solid transparent;
+  border: 2px solid rgb(171, 166, 166);
   font-weight: bold;
   padding: 3px 15px;
-  border-radius: 2rem;
+  border-radius: 8px;
   transition: 0.4s;
   font-family: Nunito;
   margin-top: 10px;
 }
 .meal-item button:hover {
-  background: transparent;
-  border: 2px solid #646464;
+  border: 2px solid rgb(238, 98, 43);
   cursor: pointer;
 }

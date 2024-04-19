@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import MealItem from "./MealItem";
-import Reservation from "./reservation/Reservation";
 
 function MealsList() {
   const [meals, setMeals] = useState([]);

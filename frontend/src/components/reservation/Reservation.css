@@ -17,7 +17,7 @@
   margin: 0px 0px 1rem 0px;
 }
 .form-style label > span {
-  width: 130px;
+  width: 30%;
   font-weight: bold;
   padding-top: 8px;
   padding-right: 1rem;
@@ -30,17 +30,16 @@
   width: 50%;
   text-align: center;
 }
-.form-style input.input-field {
+.form-style .input-field {
   box-sizing: border-box;
   padding: 7px;
   outline: none;
 }
 .form-style .input-field:focus,
 .form-style .tel-number-field:focus {
-  border: 1px solid rgb(222, 135, 43);
+  border: 1px solid rgb(248, 142, 29);
 }
-.form-style input[type="submit"],
-.form-style input[type="button"] {
+.submit input {
   border: none;
   padding: 8px 1rem 8px 1rem;
   background: #f1810a;
@@ -48,10 +47,8 @@
   box-shadow: 1px 1px 4px #dadada;
   border-radius: 3px;
 }
-.form-style input[type="submit"]:hover,
-.form-style input[type="button"]:hover {
-  background: #a3a1a0;
-  color: #fff;
+.submit input:hover {
+  color: #0e0d0d;
 }
 .new-order {
   display: flex;
@@ -69,6 +66,6 @@
   margin-top: 2rem;
   cursor: pointer;
 }
-.reservation-div{
+.reservation-div {
   position: relative;
 }

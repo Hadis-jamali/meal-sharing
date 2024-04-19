@@ -68,101 +68,98 @@ function Reservation() {
     setShowModal(true);
   };
 
-
-
   return (
     <>
       <>
-    <NavBar />
+        <NavBar />
 
-    <div className="reservation-div">
-      {/* Reservation component */}
-      <div className="reservation-container">
-        <div className="new-order">
-          <h3>
-            Your Order :<span> {data.data[0].title}</span>
-          </h3>
+        <div className="reservation-div">
+          <div className="reservation-container">
+            <div className="new-order">
+              <h3>
+                Your Order :<span> {data.data[0].title}</span>
+              </h3>
+            </div>
+
+            <div className="form-style">
+              <div className="form-style-heading">Provide your information</div>
+              <form action="" method="post" onSubmit={submit}>
+                <label for="field1">
+                  <span>
+                    Name <span className="required">*</span>
+                  </span>
+                  <input
+                    type="text"
+                    value={newReservation.contact_name}
+                    className="input-field"
+                    name="field1"
+                    onChange={(event) => {
+                      setNewReservation({
+                        ...newReservation,
+                        contact_name: event.target.value.toLowerCase(),
+                      });
+                    }}
+                  />
+                </label>
+
+                <label for="field2">
+                  <span>
+                    Email <span className="required">*</span>
+                  </span>
+                  <input
+                    type="text"
+                    value={newReservation.contact_email}
+                    className="input-field"
+                    name="field2"
+                    onChange={(event) => {
+                      setNewReservation({
+                        ...newReservation,
+                        contact_email: event.target.value.toLowerCase(),
+                      });
+                    }}
+                  />
+                </label>
+                <label>
+                  <span>Telephone</span>
+                  <input
+                    type="text"
+                    value={newReservation.contact_phonenumber}
+                    className="input-field"
+                    name="tel"
+                    onChange={(event) => {
+                      setNewReservation({
+                        ...newReservation,
+                        contact_phonenumber: event.target.value.toLowerCase(),
+                      });
+                    }}
+                  />
+                </label>
+
+                <label>
+                  <span className="guest">guest number</span>
+                  <input
+                    type="number"
+                    value={newReservation.number_of_guests}
+                    className="input-field"
+                    name="guest"
+                    onChange={(event) => {
+                      setNewReservation({
+                        ...newReservation,
+                        number_of_guests: event.target.value,
+                      });
+                    }}
+                  />
+                </label>
+
+                <label className="submit">
+                  <input type="submit" value="Submit" />
+                </label>
+              </form>
+            </div>
+          </div>
+          {showModal && <Modal />}
         </div>
-
-        <div className="form-style">
-          <div className="form-style-heading">Provide your information</div>
-          <form action="" method="post" onSubmit={submit}>
-          <label for="field1">
-                <span>
-                  Name <span className="required">*</span>
-                </span>
-                <input
-                  type="text"
-                  value={newReservation.contact_name}
-                  className="input-field"
-                  name="field1"
-                  onChange={(event) => {
-                    setNewReservation({
-                      ...newReservation,
-                      contact_name: event.target.value.toLowerCase(),
-                    });
-                  }}
-                />
-              </label>
-
-              <label for="field2">
-                <span>
-                  Email <span className="required">*</span>
-                </span>
-                <input
-                  type="text"
-                  value={newReservation.contact_email}
-                  className="input-field"
-                  name="field2"
-                  onChange={(event) => {
-                    setNewReservation({
-                      ...newReservation,
-                      contact_email: event.target.value.toLowerCase(),
-                    });
-                  }}
-                />
-              </label>
-              <label>
-                <span>Telephone</span>
-                <input
-                  type="text"
-                  value={newReservation.contact_phonenumber}
-                  className="input-field"
-                  name="tel"
-                  onChange={(event) => {
-                    setNewReservation({
-                      ...newReservation,
-                      contact_phonenumber: event.target.value.toLowerCase(),
-                    });
-                  }}
-                />
-              </label>
-
-              <label>
-                <span className="guest">guest number</span>
-                <input
-                  type="number"
-                  value={newReservation.number_of_guests}
-                  className="input-field"
-                  name="guest"
-                  onChange={(event) => {
-                    setNewReservation({ ...newReservation, number_of_guests: event.target.value });
-                  }}
-                />
-              </label>
-
-              <label className="submit">
-                <input  type="submit" value="Submit" />
-              </label>
-
-          </form>
-        </div>
-      </div>
-
-      {/* Modal component */}
-      {showModal && <Modal />}
-    </div>
-  </>
+      </>
     </>
   );
 }
