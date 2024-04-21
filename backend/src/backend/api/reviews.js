@@ -62,8 +62,8 @@ router.delete("/:id", async (req, res) => {
     const deleteReview = await knex("review").where("id", "=", reviewId).del();
 
     if (deleteReview) {
-      res.status(200).json({ data: deleteReview, message: "ok" }); 
-    }else{
+      res.status(200).json({ data: deleteReview, message: "ok" });
+    } else {
       res.status(404).json({ data: deleteReview, message: "review id was not found" });
     }
   } catch (error) {

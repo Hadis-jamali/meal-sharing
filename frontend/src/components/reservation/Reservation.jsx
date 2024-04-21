@@ -30,14 +30,12 @@ function Reservation() {
     const meal_id = data.data[0].id;
     const created_date = new Date().toISOString().split("T")[0];
 
-    setNewReservation((prevReservation) => ({
-      ...prevReservation,
+    const formData = JSON.stringify({
+      ...newReservation,
       meal_id: Number(meal_id),
       created_date: created_date,
-    }));
-
-    const formData = JSON.stringify(newReservation);
-
+    });
+    console.log(formData);
     fetch("http://127.0.0.1:5000/api/reservation", {
       method: "POST",
       headers: {

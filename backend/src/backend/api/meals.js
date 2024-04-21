@@ -93,4 +93,13 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+// router.get("/:id/reviews", async (req, res) => {
+//   const mealId = +req.params.id;
+//   const reviwesForMeal = await knex("review")
+//     .select("review.title", "review.description", "review.stars", "Meal.meal_id")
+//     .join("Meal", "Meal.meal_id", "=", "review.meal_id")
+//     .where("Meal.meal_id", "=", mealId);
+//   res.status(200).json({ data: reviwesForMeal, message: "ok" });
+// });
+
 module.exports = router;
