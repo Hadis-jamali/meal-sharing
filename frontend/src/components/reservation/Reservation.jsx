@@ -25,8 +25,13 @@ function Reservation() {
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error in fetching data</div>;
 
+  const availableSpace = data.data[0].max_reservation - data.data[0].current_reservations;
+
   const submit = (event) => {
     event.preventDefault();
+    if (availableSpace <= 0) {
+      return;
+    }
     const meal_id = data.data[0].id;
     const created_date = new Date().toISOString().split("T")[0];
 
@@ -35,7 +40,6 @@ function Reservation() {
       meal_id: Number(meal_id),
       created_date: created_date,
     });
-    console.log(formData);
     fetch("http://127.0.0.1:5000/api/reservation", {
       method: "POST",
       headers: {
@@ -77,6 +81,9 @@ function Reservation() {
               <h3>
                 Your Order :<span> {data.data[0].title}</span>
               </h3>
+              <div className="availableSpace">
+                {availableSpace <= 0 && <p className="sold-out-message">Sold Out</p>}
+              </div>
             </div>
 
             <div className="form-style">
@@ -105,7 +112,7 @@ function Reservation() {
                     Email <span className="required">*</span>
                   </span>
                   <input
-                    type="text"
+                    type="email"
                     value={newReservation.contact_email}
                     className="input-field"
                     name="field2"

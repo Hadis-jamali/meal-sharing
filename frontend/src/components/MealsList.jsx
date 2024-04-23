@@ -43,11 +43,12 @@ function MealsList() {
   return (
     <>
       <Search search={search} setSearch={setSearch} searchHandler={searchHandler} />
+      
       <div className="meal-list">
         {loading ? (
           <p>Loading...</p>
         ) : meals.data.length > 0 ? (
-          meals.data.map((meal) => <MealItem key={meal.meal_id} meal={meal} />)
+          meals.data.map((meal,index) => <MealItem key={index} meal={meal} />)
         ) : (
           <p>No Item</p>
         )}
