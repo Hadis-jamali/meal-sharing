@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import MealItem from "./MealItem";
+import Search from "./SearchBox/Search";
 
 function MealsList() {
   const [meals, setMeals] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [search, setSearch] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,8 +26,23 @@ function MealsList() {
     fetchData();
   }, []);
 
+  const searchHandler = () => {
+    if (search) {
+      let searchMeals = {
+        data: meals.data,
+      };
+      searchMeals.data = meals.data.filter((meal) => {
+        return meal.title.toLowerCase().includes(search);
+      });
+      setMeals(searchMeals);
+    } else {
+      setMeals(meals);
+    }
+  };
+
   return (
     <>
+      <Search search={search} setSearch={setSearch} searchHandler={searchHandler} />
       <div className="meal-list">
         {loading ? (
           <p>Loading...</p>
@@ -37,7 +54,6 @@ function MealsList() {
       </div>
     </>
   );
-  
 }
 
 export default MealsList;
