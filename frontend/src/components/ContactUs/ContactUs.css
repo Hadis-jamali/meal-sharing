@@ -1,0 +1,59 @@
+.main-about {
+  width: 80%;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about {
+  width: 100%;
+  padding: 5rem 0px;
+  color: #191919;
+}
+
+.about-text {
+  width: 600px;
+}
+.about-text h1 {
+  color: #000;
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  font-family: Nunito;
+}
+.about-text p {
+  color: #000;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  font-family: Nunito;
+}
+
+.about-text button {
+  background: rgb(242, 135, 59);
+  color: #000;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  transition: 0.4s;
+}
+.about-text button:hover {
+  background: transparent;
+  border: 2px solid #646464;
+  cursor: pointer;
+}
+.social-media {
+  display: flex;
+  padding-left: 2rem;
+}
+.animation {
+  width: 400px;
+  height: 300px;
+  background: url(./images/coding.gif) left top;
+  animation: play-sprite 10s 3s steps(1) infinite;
+}

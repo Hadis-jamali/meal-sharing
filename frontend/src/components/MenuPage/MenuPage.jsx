@@ -8,7 +8,7 @@ function MenuPage() {
       </div>
       <div className="menu-container">
         <h1>Menu</h1>
-        <p>Available meals in our place</p>
+        <p className="Available">Available meals in our place</p>
         <div>
           <h3>Pizza salami</h3>
           <p>delicious italian food</p>
