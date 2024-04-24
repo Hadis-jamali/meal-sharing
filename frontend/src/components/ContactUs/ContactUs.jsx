@@ -6,7 +6,7 @@ function ContactUs() {
   return (
     <div className="about">
       <div className="main-about">
-        <div className="animation"/>
+        <div className="animation" />
         <div className="about-text">
           <h1>About Us</h1>
           <p>
@@ -20,8 +20,8 @@ function ContactUs() {
 
           <div className="social-media">
             <div>
-              <Link to="https://www.linkedin.com/in/hadisjamali/">
-                <button type="button">Let's Talk</button>
+              <Link to="mailto:hadisjamali95@gmail.com">
+                <button type="button">Contact Us</button>
               </Link>
             </div>
           </div>
