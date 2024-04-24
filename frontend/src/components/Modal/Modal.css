@@ -22,8 +22,7 @@
 }
 
 .close {
-  /* top: 4px; */
-  /* right: 5px; */
+  
   background-color: transparent;
   border: 2px solid rgb(169, 163, 163);
   border-radius: 1rem;

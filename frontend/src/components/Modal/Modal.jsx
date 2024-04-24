@@ -3,7 +3,7 @@ import "./Modal.css";
 import { Link } from "react-router-dom";
 function Modal() {
   return (
-    <div>
+    
       <div className="container-modal">
         <div className="Content" id="Popup">
           <Link to="/Meals">
@@ -15,7 +15,7 @@ function Modal() {
           </Link>
         </div>
       </div>
-    </div>
+    
   );
 }
 

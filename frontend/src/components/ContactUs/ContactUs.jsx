@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ContactUs.css";
-// import foodGif from "../../assets/images/food.gif";
+
 function ContactUs() {
   return (
     <div className="about">
       <div className="main-about">
-        <div className="animation"></div>
+        <div className="animation"/>
         <div className="about-text">
           <h1>About Us</h1>
           <p>
