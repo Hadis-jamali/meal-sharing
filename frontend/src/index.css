@@ -4,10 +4,6 @@
 }
 
 body {
-  margin: auto;
-  min-height: 100vh;
-  background: white;
-  background-color: white;
   font-family: Nunito;
 }
 .meal-list {
