@@ -11,7 +11,7 @@
 .menu-container {
   margin: auto;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   background-color: #fff;
   border-radius: 2rem;
   padding: 10px;
@@ -32,12 +32,18 @@
   display: flex;
   justify-content: center;
   color: #4d9308;
+  font-size: 1.3rem;
 }
 .menu-container p {
   display: flex;
   justify-content: center;
 }
-.available{
+.available {
   font-weight: bold;
   font-size: 1rem;
+}
+@media only screen and (max-width: 800px) {
+  .menu-container {
+    width: 90%;
+  }
 }
