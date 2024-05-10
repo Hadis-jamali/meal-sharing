@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .about {
   width: 100%;
@@ -49,8 +48,13 @@
   cursor: pointer;
 }
 .animation {
-  width: 500px;
+  width: 550px;
   height: 400px;
   background: url(../../assets/images/food.gif) left top;
   animation: play-sprite 10s 3s steps(1) infinite;
+}
+@media only screen and (max-width: 800px) {
+  .main-about {
+    flex-wrap: wrap;
+  }
 }
