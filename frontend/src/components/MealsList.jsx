@@ -11,7 +11,7 @@ function MealsList() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("/api/meals");
+        const response = await axios.get("https://meals-sharing.onrender.com/api/meals");
         if (response.data !== null) {
           console.log(response.data);
           console.log("MealsList component rendered");
@@ -43,7 +43,7 @@ function MealsList() {
   return (
     <>
       <Search search={search} setSearch={setSearch} searchHandler={searchHandler} />
-      
+
       <div className="meal-list">
         {loading ? (
           <p>Loading...</p>

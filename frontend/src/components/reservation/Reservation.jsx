@@ -40,7 +40,7 @@ function Reservation() {
       meal_id: Number(meal_id),
       created_date: created_date,
     });
-    fetch("/api/reservation", {
+    fetch("https://meals-sharing.onrender.com/api/reservation", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

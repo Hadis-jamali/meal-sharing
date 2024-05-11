@@ -8,6 +8,7 @@ const knex = require("knex")({
     user: process.env.DB_USER || "root",
     password: process.env.DB_PASSWORD || "lol",
     database: process.env.DB_NAME || "postgres",
+    ssl: { rejectUnauthorized: false },
   },
   // pool: { min: 0, max: 7 },
   pool: { min: 2, max: 10 },
