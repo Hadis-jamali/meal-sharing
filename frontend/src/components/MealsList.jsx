@@ -11,7 +11,7 @@ function MealsList() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://meals-sharing.onrender.com/api/meals");
+        const response = await axios.get("http://127.0.0.1:5000/api/meals");
         if (response.data !== null) {
           console.log(response.data);
           console.log("MealsList component rendered");
