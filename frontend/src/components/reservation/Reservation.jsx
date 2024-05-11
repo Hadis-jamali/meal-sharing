@@ -21,7 +21,7 @@ function Reservation() {
 
   const { id } = useParams();
 
-  const { data, error, isLoading } = useSWR(`http://127.0.0.1:5000/api/meals/${id}`, fetcher);
+  const { data, error, isLoading } = useSWR(`/api/meals/${id}`, fetcher);
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error in fetching data</div>;
 
@@ -40,7 +40,7 @@ function Reservation() {
       meal_id: Number(meal_id),
       created_date: created_date,
     });
-    fetch("http://127.0.0.1:5000/api/reservation", {
+    fetch("/api/reservation", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
