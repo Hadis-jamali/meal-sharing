@@ -1,7 +1,4 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://www.hackyourfuture.dk/static/logo-dark.svg" alt="Project logo"></a>
-</p>
+
 
 <h3 align="center">Meal sharing api</h3>
 
@@ -18,23 +15,30 @@
     <br> 
 </p>
 
-## 📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Built Using](#built_using)
+
+## 📝 Table of Contents
+<p>This is a full-stack web application built with Typescript, Express.js, React, and PostgreSQL.</p>
+<p>It was created as an individual project task for Hack Your Future Denmark's curriculum.</p>
+<p>The main functionalities of this website are:</p>
+
+- Displaying the meals in the database
+- Searching for a meal
+- Making a reservation
+- Leaving a review
 - [Authors](#authors)
 
 ## 🧐 About <a name = "about"></a>
 
-Link to deployed website: 
+Link to deployed website: <a>https://meal-sharing-h3fe.onrender.com</a>
 
-This project will be built out over 3 different classes:
+Technologies Used:
 
-- **Nodejs week 3** - Here you will be building the backend api. Meaning you will work in the `src/backend` folder.
-- **React week 5** - Here you will be building the frontend components and routing. In this week you will be working in the `src/client` folder.
-- **Meal sharing class** - After week 5 of react you will have a specific class for finishing the meal sharing website. Here you will make everything work and deploy the website to the internet
+- Express.js
+- KnexJS
+- PostgreSQL
+- React + vite
+- Css
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -58,18 +62,24 @@ To install run `npm install`
 
 To run `npm run dev`
 
-The api can now be found on `http://localhost:3000/api/` an example is `http://localhost:3000/api/meals`
 
-## ⛏️ Built Using <a name = "built_using"></a>
+## ⛏️ What I Learned :
 
-- [Mysql](https://www.npmjs.com/package/mysql) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+During the development of this project, I faced several challenges that helped me learn new skills and technologies. Some of the challenges I faced include building a Star component for leaving a rating for a meal, a Modal component, and a Burger Menu for mobile displays.
 
-## ☁️ Deployment <a name = "deployment"></a>
+Through these challenges, I was able to gain a better understanding of React, CSS Modules, and Frontend Development in general. I also learned how to work with Express.js, KnexJS, and PostgreSQL to build a full-stack web application.
 
-[Deployment guide](https://github.com/HackYourFuture-CPH/deployment-guide)
+In addition to these technical skills, I also learned how to manage my time effectively and prioritize tasks to meet deadlines.
 
-## ✍️ Authors <a name = "authors"></a>
 
-- [@benna100](https://github.com/benna100) - Idea & Initial work
+
+![meal-sharing1](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/31e85cb8-cee2-44ab-bfc2-9c2c9cf029be)
+
+![mealsharing2](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/cf3b3c57-0cb7-461f-827d-105d5a458864)
+
+![mealsharing4](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/7b681311-8eac-45a9-b671-2145afbb19f4)
+
+![mealsharing5](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/48db0180-991a-40e9-a305-d78ebde044c3)
+
+![mealsharing3](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/74164779-e3ea-4fa2-acc4-23509df0e89a)
+
