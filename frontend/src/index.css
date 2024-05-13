@@ -37,3 +37,7 @@ body {
   border: 2px solid rgb(238, 98, 43);
   cursor: pointer;
 }
+.images {
+  width: 70px;
+  height: 100px;
+}
