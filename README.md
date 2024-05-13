@@ -1,6 +1,6 @@
 
 
-<h3 align="center">Meal sharing api</h3>
+<h1 align="center">Meal sharing app</h1>
 
 <div align="center">
 
@@ -17,7 +17,7 @@
 
 
 
-## 📝 Table of Contents
+### 📝 Description :
 <p>This is a full-stack web application built with Typescript, Express.js, React, and PostgreSQL.</p>
 <p>It was created as an individual project task for Hack Your Future Denmark's curriculum.</p>
 <p>The main functionalities of this website are:</p>
