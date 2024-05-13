@@ -2,12 +2,7 @@
 
 <h1 align="center">Meal sharing app</h1>
 
-<div align="center">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div>
 
 ---
 
@@ -16,6 +11,7 @@
 </p>
 
 
+Link to deployed website: <a>https://meal-sharing-h3fe.onrender.com</a>
 
 ### 📝 Description :
 <p>This is a full-stack web application built with Typescript, Express.js, React, and PostgreSQL.</p>
@@ -28,12 +24,7 @@
 - Leaving a review
 - [Authors](#authors)
 
-## 🧐 About <a name = "about"></a>
-
-Link to deployed website: <a>https://meal-sharing-h3fe.onrender.com</a>
-
-Technologies Used:
-
+### Technologies Used:
 - Express.js
 - KnexJS
 - PostgreSQL
@@ -65,9 +56,9 @@ To run `npm run dev`
 
 ## ⛏️ What I Learned :
 
-During the development of this project, I faced several challenges that helped me learn new skills and technologies. Some of the challenges I faced include building a Star component for leaving a rating for a meal, a Modal component, and a Burger Menu for mobile displays.
+During the development of this project, I faced several challenges that helped me learn new skills and technologies. Some of the challenges I faced include building a Star component for leaving a rating for a meal, a Modal component, and make it responsive.
 
-Through these challenges, I was able to gain a better understanding of React, CSS Modules, and Frontend Development in general. I also learned how to work with Express.js, KnexJS, and PostgreSQL to build a full-stack web application.
+Through these challenges, I was able to gain a better understanding of React, CSS, and Frontend Development in general. I also learned how to work with Express.js, KnexJS, and PostgreSQL and mySQL to build a full-stack web application.
 
 In addition to these technical skills, I also learned how to manage my time effectively and prioritize tasks to meet deadlines.
 
@@ -75,11 +66,16 @@ In addition to these technical skills, I also learned how to manage my time effe
 
 ![meal-sharing1](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/31e85cb8-cee2-44ab-bfc2-9c2c9cf029be)
 
+
 ![mealsharing2](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/cf3b3c57-0cb7-461f-827d-105d5a458864)
+
 
 ![mealsharing4](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/7b681311-8eac-45a9-b671-2145afbb19f4)
 
+
 ![mealsharing5](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/48db0180-991a-40e9-a305-d78ebde044c3)
 
+
 ![mealsharing3](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/74164779-e3ea-4fa2-acc4-23509df0e89a)
+
 
