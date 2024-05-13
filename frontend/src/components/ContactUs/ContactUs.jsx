@@ -10,7 +10,7 @@ function ContactUs() {
         <div className="about-text">
           <h1>About Us</h1>
           <p>
-            Italian culinary tradition and Danish coziness meet here, where our chef has created a
+            Italian culinary tradition and Danish coziness meet here. where our chef has created a
             menu driven by passion. With a background rich in experience and a deep love for the
             Italian cuisine, our chef offers a true taste of Italy. Our menu is a journey through
             Italy's gastronomic landscape, where fresh Danish ingredients meet classic Italian
