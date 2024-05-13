@@ -30,6 +30,16 @@ Link to deployed website: <a>https://meal-sharing-h3fe.onrender.com</a>
 - PostgreSQL
 - React + vite
 - Css
+  
+
+## ⛏️ What I Learned :
+
+During the development of this project, I faced several challenges that helped me learn new skills and technologies. Some of the challenges I faced include building a Star component for leaving a rating for a meal, a Modal component, and make it responsive.
+
+Through these challenges, I was able to gain a better understanding of React, CSS, and Frontend Development in general. I also learned how to work with Express.js, KnexJS, and PostgreSQL and mySQL to build a full-stack web application.
+
+In addition to these technical skills, I also learned how to manage my time effectively and prioritize tasks to meet deadlines.
+
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -52,15 +62,6 @@ To install run `npm install`
 ## 🎈 Usage <a name="usage"></a>
 
 To run `npm run dev`
-
-
-## ⛏️ What I Learned :
-
-During the development of this project, I faced several challenges that helped me learn new skills and technologies. Some of the challenges I faced include building a Star component for leaving a rating for a meal, a Modal component, and make it responsive.
-
-Through these challenges, I was able to gain a better understanding of React, CSS, and Frontend Development in general. I also learned how to work with Express.js, KnexJS, and PostgreSQL and mySQL to build a full-stack web application.
-
-In addition to these technical skills, I also learned how to manage my time effectively and prioritize tasks to meet deadlines.
 
 
 
