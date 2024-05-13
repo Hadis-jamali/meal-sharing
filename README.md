@@ -24,7 +24,7 @@ Link to deployed website: <a>https://meal-sharing-h3fe.onrender.com</a>
 - Leaving a review and more!
   
 
-### Technologies Used:
+### 📝 Technologies Used:
 - Express.js
 - KnexJS
 - PostgreSQL
