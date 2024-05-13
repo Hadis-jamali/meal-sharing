@@ -11,7 +11,7 @@ function MealsList() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:5000/api/meals");
+        const response = await axios.get("https://meal-sharing-h3fe.onrender.com/api/meals");
         if (response.data !== null) {
           console.log(response.data);
           console.log("MealsList component rendered");
@@ -49,8 +49,9 @@ function MealsList() {
           <p>Loading...</p>
         ) : meals.data.length > 0 ? (
           // meals.data.map((meal) => <MealItem key={meal.id} meal={meal} />)
-          meals.data.map((meal) => <MealItem key={meal.id} meal={meal} averageRating={meal.average_rating} />)
-
+          meals.data.map((meal) => (
+            <MealItem key={meal.id} meal={meal} averageRating={meal.average_rating} />
+          ))
         ) : (
           <p>No Item</p>
         )}
