@@ -21,7 +21,7 @@ function Reservation() {
 
   const { id } = useParams();
 
-  const { data, error, isLoading } = useSWR(`https://meal-sharing-h3fe.onrender.com/api/meals/${id}`, fetcher);
+  const { data, error, isLoading } = useSWR(`https://meal-sharing-hadis.onrender.com/api/meals/${id}`, fetcher);
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error in fetching data</div>;
 
@@ -40,7 +40,7 @@ function Reservation() {
       meal_id: Number(meal_id),
       created_date: created_date,
     });
-    fetch("https://meal-sharing-h3fe.onrender.com/api/reservation", {
+    fetch("https://meal-sharing-hadis.onrender.com/api/reservation", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

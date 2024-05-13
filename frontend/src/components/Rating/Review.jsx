@@ -30,7 +30,7 @@ function Review({ mealId, averageRating }) {
       meal_id: Number(mealId),
       create_date: create_date,
     });
-    fetch("https://meal-sharing-h3fe.onrender.com/api/reviews", {
+    fetch("https://meal-sharing-hadis.onrender.com/api/reviews", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
