@@ -15,8 +15,7 @@ function MealItem({ meal }) {
         <Link to={`/Meals/${meal.id}`}>
           <button>Order</button>
         </Link>
-
-        <Review mealId={meal.id} />
+        <Review mealId={meal.id} averageRating={meal.average_rating} />
       </div>
     </div>
   );

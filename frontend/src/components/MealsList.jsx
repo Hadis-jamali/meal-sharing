@@ -48,7 +48,9 @@ function MealsList() {
         {loading ? (
           <p>Loading...</p>
         ) : meals.data.length > 0 ? (
-          meals.data.map((meal) => <MealItem key={meal.id} meal={meal} />)
+          // meals.data.map((meal) => <MealItem key={meal.id} meal={meal} />)
+          meals.data.map((meal) => <MealItem key={meal.id} meal={meal} averageRating={meal.average_rating} />)
+
         ) : (
           <p>No Item</p>
         )}

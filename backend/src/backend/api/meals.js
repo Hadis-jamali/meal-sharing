@@ -6,7 +6,11 @@ router.get("/", async (req, res) => {
   const { maxPrice, availableReservations, title, dateAfter, sortKey, sortDir, dateBefore, limit } =
     req.query;
   const response = {
-    data: await knex("meals").select("*"),
+    data: await knex("meals as m")
+      .select("m.*")
+      .leftJoin("review as r", "m.id", "r.meal_id")
+      .groupBy("m.id")
+      .select(knex.raw("ROUND(COALESCE(AVG(r.stars), 0), 1) AS average_rating")),
     status: 200,
     message: "ok",
   };

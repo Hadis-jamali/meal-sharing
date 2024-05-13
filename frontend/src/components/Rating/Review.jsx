@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./Review.css";
 
 const currentRating = 1;
-function Review({ mealId }) {
+function Review({ mealId, averageRating }) {
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
   // let currentRating = 1;
@@ -26,7 +26,7 @@ function Review({ mealId }) {
     const create_date = new Date().toISOString().split("T")[0];
     const reviewData = JSON.stringify({
       ...newReview,
-      stars: currentRating,
+      stars: starValue,
       meal_id: Number(mealId),
       create_date: create_date,
     });
@@ -80,7 +80,7 @@ function Review({ mealId }) {
         );
       })}
       <p>
-        Rating : <span className="rating">{rating}</span>
+        Rating: <span className="rating">{averageRating}</span>
       </p>
     </div>
   );
