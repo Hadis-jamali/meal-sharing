@@ -21,8 +21,8 @@ Link to deployed website: <a>https://meal-sharing-h3fe.onrender.com</a>
 - Displaying the meals in the database
 - Searching for a meal
 - Making a reservation
-- Leaving a review
-- [Authors](#authors)
+- Leaving a review and more!
+  
 
 ### Technologies Used:
 - Express.js
