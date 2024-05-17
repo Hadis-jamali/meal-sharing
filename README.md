@@ -48,8 +48,7 @@ In addition to these technical skills, I also learned how to manage my time effe
 
 All sensitive data like fx passwords and usernames, we dont want to add to git! This problem we solve by having environment variables. Environment variables are not committed to git and have a key value structure.
 
-Remember to copy the `.env.example` file, and rename the copied file to `.env`. In the `.env` file add the relevant host, database name, database user and pasword to your own local database. If you are unsure of these things then select your database in the Mysql Workbench. Now press `Database` -> `Manage Connections...`. Here you can see everything you need except the password. If you forgot that, reset it.
-
+Remember to copy the `.env.example` file, and rename the copied file to `.env`. In the `.env` file add the relevant host, database name, database user and pasword to your own local database.
 ### Prerequisites
 
 - Postman
@@ -57,7 +56,7 @@ Remember to copy the `.env.example` file, and rename the copied file to `.env`. 
 
 ### Installing
 
-To install run `npm install`
+To install run `npm install` and `npm run server`
 
 ## 🎈 Usage <a name="usage"></a>
 
