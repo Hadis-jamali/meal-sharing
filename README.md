@@ -58,10 +58,6 @@ Remember to copy the `.env.example` file, and rename the copied file to `.env`. 
 
 To install run `npm install` , `npm run dev` and `npm run server`
 
-## 🎈 Usage <a name="usage"></a>
-
-To run `npm run dev`
-
 
 
 ![meal-sharing1](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/31e85cb8-cee2-44ab-bfc2-9c2c9cf029be)
