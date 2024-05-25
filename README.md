@@ -10,7 +10,7 @@
     <br> 
 </p>
 
-
+### ✨ Demo :
 Link to deployed website: <a>https://meal-sharing-h3fe.onrender.com</a>
 
 ### 📝 Description :
@@ -24,7 +24,7 @@ Link to deployed website: <a>https://meal-sharing-h3fe.onrender.com</a>
 - Leaving a review and more!
   
 
-### 📝 Technologies Used:
+### 🧩 Technologies Used:
 - Express.js
 - KnexJS
 - PostgreSQL
@@ -56,7 +56,7 @@ Remember to copy the `.env.example` file, and rename the copied file to `.env`. 
 
 ### Installing
 
-To install run `npm install` and `npm run server`
+To install run `npm install` , `npm run dev` and `npm run server`
 
 ## 🎈 Usage <a name="usage"></a>
 
