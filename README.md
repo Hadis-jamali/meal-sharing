@@ -15,7 +15,6 @@ Link to deployed website: <a>https://meal-sharing-h3fe.onrender.com</a>
 
 ### 📝 Description :
 <p>This is a full-stack web application built with Javascript, Express.js, React, and PostgreSQL.</p>
-<p>It was created as an individual project task for Hack Your Future Denmark's curriculum.</p>
 <p>The main functionalities of this website are:</p>
 
 - Displaying the meals in the database
