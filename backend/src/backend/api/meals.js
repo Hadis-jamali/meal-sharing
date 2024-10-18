@@ -83,7 +83,14 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const { id: mealId } = req.params;
-    const meal = await knex("meals").where("id", "=", mealId).select();
+    const meal = await knex("meals")
+      .where("meals.id", "=", mealId)
+      .leftJoin("reservation", "meals.id", "reservation.meal_id")
+      .groupBy("meals.id")
+      .select(
+        knex.raw("meals.*, COALESCE(SUM(reservation.number_of_guests), 0) AS current_reservations")
+      );
+
     if (meal) {
       res.status(200).json({ data: meal, message: "ok" });
     }
@@ -92,14 +99,5 @@ router.get("/:id", async (req, res) => {
     res.status(500).send("something went wrong");
   }
 });
-
-// router.get("/:id/reviews", async (req, res) => {
-//   const mealId = +req.params.id;
-//   const reviwesForMeal = await knex("review")
-//     .select("review.title", "review.description", "review.stars", "Meal.meal_id")
-//     .join("Meal", "Meal.meal_id", "=", "review.meal_id")
-//     .where("Meal.meal_id", "=", mealId);
-//   res.status(200).json({ data: reviwesForMeal, message: "ok" });
-// });
 
 module.exports = router;

@@ -4,10 +4,6 @@
 }
 
 body {
-  margin: auto;
-  min-height: 100vh;
-  background: white;
-  background-color: white;
   font-family: Nunito;
 }
 .meal-list {
@@ -40,20 +36,4 @@ body {
 .meal-item button:hover {
   border: 2px solid rgb(238, 98, 43);
   cursor: pointer;
-}
-.meal-star {
-  margin: 1rem;
-  color: rgb(236, 231, 67);
-}
-.input-star {
-  display: none;
-}
-.star {
-  cursor: pointer;
-}
-.meal-star p {
-  color: gray;
-}
-.rating {
-  color: #ffc107;
 }

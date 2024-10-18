@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
     }
   } catch (error) {
     console.error(error);
-    res.status(500).send("something wrong");
+    res.status(500).send("Something wrong");
   }
 });
 
@@ -23,7 +23,7 @@ router.get("/:id", async (req, res) => {
     }
   } catch (error) {
     console.error(error);
-    res.status(500).send("something went wrong");
+    res.status(500).send("Something went wrong");
   }
 });
 
@@ -35,7 +35,7 @@ router.post("/", async (req, res) => {
     res.status(201).json({ data: newReview, message: "ok" });
   } catch (error) {
     console.error(error);
-    res.status(500).send("something went wrong");
+    res.status(500).send("Something went wrong");
   }
 });
 
@@ -52,7 +52,7 @@ router.put("/:id", async (req, res) => {
     }
   } catch (error) {
     console.error(error);
-    res.status(500).send("something went wrong");
+    res.status(500).send("Something went wrong");
   }
 });
 
@@ -68,7 +68,7 @@ router.delete("/:id", async (req, res) => {
     }
   } catch (error) {
     console.error(error);
-    res.status(500).send("something went wrong");
+    res.status(500).send("Something went wrong");
   }
 });
 module.exports = router;
