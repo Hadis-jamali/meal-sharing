@@ -14,7 +14,7 @@
 Link to deployed website: <a>https://meal-sharing-h3fe.onrender.com</a>
 
 ### 📝 Description :
-<p>This is a full-stack web application built with Javascript, Express.js, React, and PostgreSQL.</p>
+<p>This is a full-stack web application built with React, Javascript, Express.js, and MySQL.</p>
 <p>The main functionalities of this website are:</p>
 
 - Displaying the meals in the database
