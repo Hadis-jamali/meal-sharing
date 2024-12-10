@@ -1,40 +1,44 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://www.hackyourfuture.dk/static/logo-dark.svg" alt="Project logo"></a>
-</p>
 
-<h3 align="center">Meal sharing api</h3>
 
-<div align="center">
+<h1 align="center">🍝 Meal sharing app</h1>
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-</div>
 
----
 
-<p align="center"> Website api for sharing meals together. Invite your best friends or your family for dinner!
+
+<p align="center"> Website for sharing meals together.
     <br> 
 </p>
 
-## 📝 Table of Contents
+### ✨ Demo :
+Link to deployed website: <a>https://meal-sharing-h3fe.onrender.com</a>
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [Authors](#authors)
+### 📝 Description :
+<p>This is a full-stack web application built with React, Javascript, Express.js, and MySQL.</p>
+<p>The main functionalities of this website are:</p>
 
-## 🧐 About <a name = "about"></a>
+- Displaying the meals in the database
+- Searching for a meal
+- Making a reservation
+- Leaving a review and more!
+  
 
-Link to deployed website: 
+### 🧩 Technologies Used:
+- Express.js
+- KnexJS
+- PostgreSQL
+- React + vite
+- Css
+  
 
-This project will be built out over 3 different classes:
+## ⛏️ What I Learned :
 
-- **Nodejs week 3** - Here you will be building the backend api. Meaning you will work in the `src/backend` folder.
-- **React week 5** - Here you will be building the frontend components and routing. In this week you will be working in the `src/client` folder.
-- **Meal sharing class** - After week 5 of react you will have a specific class for finishing the meal sharing website. Here you will make everything work and deploy the website to the internet
+During the development of this project, I faced several challenges that helped me learn new skills and technologies. Some of the challenges I faced include building a Star component for leaving a rating for a meal, a Modal component, add slider, and make it responsive.
+
+Through these challenges, I was able to gain a better understanding of React, CSS, and Frontend Development in general. I also learned how to work with Express.js, KnexJS, and PostgreSQL and mySQL to build a full-stack web application.
+
+In addition to these technical skills, I also learned how to manage my time effectively and prioritize tasks to meet deadlines.
+
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -43,33 +47,30 @@ This project will be built out over 3 different classes:
 
 All sensitive data like fx passwords and usernames, we dont want to add to git! This problem we solve by having environment variables. Environment variables are not committed to git and have a key value structure.
 
-Remember to copy the `.env.example` file, and rename the copied file to `.env`. In the `.env` file add the relevant host, database name, database user and pasword to your own local database. If you are unsure of these things then select your database in the Mysql Workbench. Now press `Database` -> `Manage Connections...`. Here you can see everything you need except the password. If you forgot that, reset it.
-
+Remember to copy the `.env.example` file, and rename the copied file to `.env`. In the `.env` file add the relevant host, database name, database user and pasword to your own local database.
 ### Prerequisites
 
 - Postman
 - MySQL Workbench
 
-### Installing
+### Installing :
 
-To install run `npm install`
+run `npm install` , `npm run dev` and `npm run server`
 
-## 🎈 Usage <a name="usage"></a>
+### Preview :
 
-To run `npm run dev`
+![meal-sharing1](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/31e85cb8-cee2-44ab-bfc2-9c2c9cf029be)
 
-The api can now be found on `http://localhost:3000/api/` an example is `http://localhost:3000/api/meals`
 
-## ⛏️ Built Using <a name = "built_using"></a>
+![mealsharing2](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/cf3b3c57-0cb7-461f-827d-105d5a458864)
 
-- [Mysql](https://www.npmjs.com/package/mysql) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
 
-## ☁️ Deployment <a name = "deployment"></a>
+![mealsharing4](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/7b681311-8eac-45a9-b671-2145afbb19f4)
 
-[Deployment guide](https://github.com/HackYourFuture-CPH/deployment-guide)
 
-## ✍️ Authors <a name = "authors"></a>
+![mealsharing5](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/48db0180-991a-40e9-a305-d78ebde044c3)
 
-- [@benna100](https://github.com/benna100) - Idea & Initial work
+
+![mealsharing3](https://github.com/Hadis-jamali/meal-sharing/assets/132214893/74164779-e3ea-4fa2-acc4-23509df0e89a)
+
+
