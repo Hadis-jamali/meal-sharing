@@ -40,7 +40,7 @@ function Reservation() {
       meal_id: Number(meal_id),
       created_date: created_date,
     });
-    fetch("http://127.0.0.1:5000/api/reservation", {
+    fetch("https://meal-sharing-hadis.onrender.com/api/reservation", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
