@@ -29,8 +29,6 @@ bower_components
 node_modules/
 jspm_packages/
 
-# dotenv environment variables file
-.env
 
 # add gitignore for .vscode and .vscode/settings.json
 .vscode 
