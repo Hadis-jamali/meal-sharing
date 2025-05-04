@@ -4,7 +4,7 @@ const knex = require("knex")({
   client: "postgres",
   connection: {
     host: process.env.DB_HOST || "127.0.0.1",
-    port: process.env.DB_PORT || 3306,
+    port: parseInt(process.env.DB_PORT, 10) || 5432,
     user: process.env.DB_USER || "root",
     password: process.env.DB_PASSWORD || "lol",
     database: process.env.DB_NAME || "postgres",
